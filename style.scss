@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.strike{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.list-container{
+    list-style-type: decimal-leading-zero;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: auto;
+    li{
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+        span{
+            cursor: grab;
+        }
+    }
+
+    button{
+        float: right;
+        margin: 0 10px;
+        background: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+}

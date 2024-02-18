@@ -1,0 +1,6 @@
+p{
+    color: red !important;
+    &::before{
+        content: "sundar ";
+    }
+}
