@@ -61,8 +61,9 @@ function strike() {
 // close btn syntax
 function addclosebtn(list) {
     let createclosebtn = document.createElement('button');
-    let createbtntext = document.createTextNode('x');
-    createclosebtn.appendChild(createbtntext);
+    let createIcon = document.createElement('i');
+    createIcon.setAttribute('class', 'bi bi-trash text-danger');
+    createclosebtn.appendChild(createIcon);
     createclosebtn.addEventListener('click', close)
     list.appendChild(createclosebtn);
 }
@@ -84,8 +85,9 @@ function close(event) {
 
 function addEditBtn(list) {
     let createBtn = document.createElement('button');
-    let createText = document.createTextNode('edit');
-    createBtn.appendChild(createText);
+    let createIcon = document.createElement('i');
+    createIcon.setAttribute('class', 'bi-pencil-square text-primary');
+    createBtn.appendChild(createIcon);
     createBtn.addEventListener('click', handleEdit)
     list.appendChild(createBtn)
 }
